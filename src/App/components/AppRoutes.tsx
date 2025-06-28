@@ -1,7 +1,7 @@
 import React from "react";
 import { Routes, Route } from "react-router-dom";
-import { getComponent } from "./helper";
-import ErrorBoundary from "../HOC/ErrorBoundary";
+import { getComponent } from "../helper";
+import ErrorBoundary from "../../HOC/ErrorBoundary";
 
 function getPathRouteDict(menu) {
   let pathElementDict = {};
@@ -18,7 +18,7 @@ function getPathRouteDict(menu) {
   });
   return pathElementDict;
 }
-function AppRoutes({ menuConfig }) {
+export function AppRoutes({ menuConfig }) {
   const pathRouteDict = getPathRouteDict(menuConfig);
   const pathList = Object.keys(pathRouteDict);
   return (
@@ -30,5 +30,3 @@ function AppRoutes({ menuConfig }) {
     </Routes>
   );
 }
-
-export { AppRoutes };

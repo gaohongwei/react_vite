@@ -1,4 +1,4 @@
-import React, { lazy, Suspense } from "react";
+import { lazy, Suspense } from "react";
 import {
   AppstoreOutlined,
   ApiOutlined,
@@ -8,7 +8,7 @@ import {
   DatabaseOutlined,
   HomeOutlined,
   WarningOutlined,
-  LoadingOutlined
+  LoadingOutlined,
 } from "@ant-design/icons";
 
 function getIcon(iconName) {

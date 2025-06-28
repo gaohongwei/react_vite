@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { Menu } from "antd";
 import { Link } from "react-router-dom";
-import { getIcon } from "./helper";
+import { getIcon } from "../helper";
 
 export const createAntdMenuItems = (menuConfig) => {
   return menuConfig.map((item) => {
@@ -10,7 +10,7 @@ export const createAntdMenuItems = (menuConfig) => {
     const menuItem = {
       key: path || name,
       label: name,
-      icon: getIcon(icon)
+      icon: getIcon(icon),
     };
 
     if (path) {
@@ -25,7 +25,7 @@ export const createAntdMenuItems = (menuConfig) => {
   });
 };
 
-const AppMenu = ({ menuConfig }) => {
+export const AppMenu = ({ menuConfig }) => {
   const [collapsed, setCollapsed] = useState(false);
   const toggleStatus = () => setCollapsed((collapsed) => !collapsed);
 
@@ -49,5 +49,3 @@ const AppMenu = ({ menuConfig }) => {
     </div>
   );
 };
-
-export { AppMenu };
