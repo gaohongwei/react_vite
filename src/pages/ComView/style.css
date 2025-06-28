@@ -1,0 +1,11 @@
+.level-one .ant-tabs-nav-wrap {
+  background: grey;
+  padding: 10px;
+  margin: 0;
+}
+
+.level-two .ant-tabs-nav-list {
+  background: green;
+  padding: 10px;
+  margin: 0;
+}

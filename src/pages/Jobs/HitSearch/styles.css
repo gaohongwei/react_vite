@@ -1,0 +1,31 @@
+.App {
+  font-family: sans-serif;
+  text-align: center;
+}
+
+.search_page {
+  margin-top: 20px;
+  margin-left: 50px;
+}
+
+.sentences {
+  margin-top: 10px;
+  display: flex;
+  flex-direction: column;
+}
+.search {
+  margin-left: 50px;
+  margin-top: 50px;
+}
+.sentence {
+  width: 100;
+  background-color: lightblue;
+  margin: 10px;
+  padding: 10px;
+  border: 2px solid darkblue;
+  color: #000;
+}
+
+.match {
+  font-weight: 700;
+}

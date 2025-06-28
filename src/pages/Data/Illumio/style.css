@@ -1,0 +1,14 @@
+h1 {
+  text-align: center;
+}
+.search {
+  margin-top: 50px;
+  margin-left: 20px;
+}
+
+.display-item {
+  display: flex;
+  flex-direction: row;
+  margin-left: 20px;
+  margin-top: 20px;
+}

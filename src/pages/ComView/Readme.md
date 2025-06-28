@@ -1,0 +1,4 @@
+- code,
+  - https://raw.githubusercontent.com/wilsmex/edu/master/navbar-responsive/navbar.css
+- video
+  - https://www.youtube.com/watch?v=6pidsgeLLzE

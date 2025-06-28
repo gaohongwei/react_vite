@@ -1,0 +1,18 @@
+.container {
+  display: flex;
+  width: 100%;
+  height: 100%;
+}
+
+.left {
+  height: 100%;
+  width: 20%;
+  background: black;
+  color: white;
+}
+
+.right {
+  background: red;
+  width: 75%;
+  color: white;
+}

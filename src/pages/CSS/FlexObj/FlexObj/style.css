@@ -1,0 +1,21 @@
+.box {
+  box-sizing: border-box;
+  width: 10%;
+
+  color: white;
+  font-size: 50px;
+  text-align: center;
+
+  background: blue;
+}
+
+.container {
+  display: flex;
+  /* flex-direction: column; */
+  flex-wrap: wrap;
+  justify-content: space-between;
+
+  /* width: 33%; */
+  height: 50%;
+  border: solid black 8px;
+}

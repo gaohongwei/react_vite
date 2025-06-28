@@ -1,0 +1,32 @@
+.parent {
+  /* position: relative; */
+  font-weight: 900;
+  height: 500px;
+  width: 500px;
+  background: yellow;
+}
+
+.fixed {
+  position: fixed;
+}
+
+.child {
+  /* position: relative; */
+  height: 100px;
+  width: 100px;
+  top: 200px;
+}
+.child-one {
+  background: red;
+  /* position: absolute;
+  bottom: 0;
+  right: 0; */
+}
+
+.child-two {
+  background: blue;
+}
+
+.child-three {
+  background: green;
+}

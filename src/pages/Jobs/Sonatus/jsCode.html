@@ -1,0 +1,98 @@
+<html>
+  <script>
+    /*
+          Sudhir Dhankhar10:30 AM
+          https://coderbyte.com/editor/sharing:RHuKKkRw
+          Sudhir Dhankhar11:00 AM
+          Print like
+          Total Data Used Per App Per Day
+              Date1:
+                App1 Usage: X
+                App2 Usage: Y
+            Date2:
+                App1: Z
+
+          Total Data Used By All Apps By Day
+              Date1: A
+              Date2: B
+          sudhir.dhankhar@sonatus.com
+          */
+    const allData = [
+      {
+        Name: "app1",
+        Used: 1000,
+        Date: "Date1"
+      },
+      {
+        Name: "app2",
+        Used: 2000,
+        Date: "Date1"
+      },
+      {
+        Name: "app1",
+        Used: 1500,
+        Date: "Date2"
+      }
+    ];
+
+    // Get the data usage (sum) per app per day
+    function getSumForAppAndDate(allData, appDate, appName) {
+      const selectedData = allData.filter(
+        ({ Name: oneName, Date: oneDate }) => {
+          return oneName === appName && oneDate === appDate;
+        }
+      );
+
+      return selectedData.reduce((sum, item) => (sum += item.Used), 0);
+    }
+
+    /*
+        Total Data Used Per App Per Day
+            Date1:
+              App1 Usage: X
+              App2 Usage: Y
+          Date2:
+              App1: Z
+
+    */
+    function printSumsForAppAndDate(allData) {
+      const allDates = allData.map((item) => item.Date);
+      const allApps = allData.map((item) => item.Name);
+      const uniqDates = [...new Set(allDates)];
+      const uniqApps = [...new Set(allApps)];
+      console.log("Total Data Used Per App Per Day");
+      uniqDates.forEach((oneDate) => {
+        console.log("Date:", oneDate);
+        uniqApps.forEach((oneApp) => {
+          const sum = getSumForAppAndDate(allData, oneDate, oneApp);
+          console.log(`\t${oneApp} usage: ${sum}`);
+        });
+      });
+    }
+
+    function getAppsForDate(allData, appDate) {
+      const selectedData = allData.filter(({ Date: oneDate }) => {
+        return oneDate === appDate;
+      });
+      return selectedData.reduce((sum, item) => (sum += item.Used), 0);
+    }
+
+    /*
+        Total Data Used By All Apps By Day
+            Date1: A
+            Date2: B
+    */
+    function printDataByAllAppsByDay(allData) {
+      const allDates = allData.map((item) => item.Date);
+      const uniqDates = [...new Set(allDates)];
+      console.log("Total Data Used By All Apps By Day");
+      uniqDates.forEach((oneDate) => {
+        const sum = getAppsForDate(allData, oneDate);
+        console.log(`\t Date: ${oneDate}: ${sum}`);
+      });
+    }
+    // Main call
+    printSumsForAppAndDate(allData);
+    printDataByAllAppsByDay(allData);
+  </script>
+</html>
