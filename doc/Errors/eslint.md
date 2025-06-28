@@ -1,0 +1,5 @@
+- 'React' refers to a UMD global, but the current file is a module. Consider adding an import instead.ts(2686)
+  - install ts
+  - npm i --save-dev typescript
+- JSX not allowed in files with extension '.tsx'eslintreact/jsx-filename-extension
+-

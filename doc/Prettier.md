@@ -1,0 +1,7 @@
+- VS Code Settings order
+  - .prettierrc
+  - .editorconfig
+  - Visual Studio Code Settings
+- Major keys
+  - "editor.defaultFormatter"
+  - "editor.formatOnSave"

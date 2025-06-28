@@ -8,7 +8,7 @@ import UrlPath from "@/pages/UrlPath";
 import {
   ReactJson,
   StringifyJson,
-  JsonViewerSample
+  JsonViewerSample,
 } from "@/pages/Data/JsonViewer";
 import { Slider as SliderAntd } from "@/pages/SliderAntd";
 
@@ -17,7 +17,7 @@ const AppMenuConfig = [
     path: "/",
     name: "Home",
     loader: () => import("@/pages/Home"),
-    icon: "HomeOutlined"
+    icon: "HomeOutlined",
   },
   {
     name: "CSS/Layout",
@@ -27,27 +27,27 @@ const AppMenuConfig = [
         path: "/css/responsive",
         name: "Responsive",
         loader: () => import("@/pages/CSS/Image/Responsive"),
-        icon: "DatabaseOutlined"
+        icon: "DatabaseOutlined",
       },
       {
         path: "/css/background",
         name: "background",
         loader: () => import("@/pages/CSS/Image/Background"),
-        icon: "DatabaseOutlined"
+        icon: "DatabaseOutlined",
       },
       {
         path: "/css/FlexObj",
         name: "FlexObj",
         loader: () => import("@/pages/CSS/FlexObj"),
-        icon: "DatabaseOutlined"
+        icon: "DatabaseOutlined",
       },
       {
         path: "/css/position",
         name: "Position",
         loader: () => import("@/pages/CSS/Position"),
-        icon: "DatabaseOutlined"
-      }
-    ]
+        icon: "DatabaseOutlined",
+      },
+    ],
   },
   {
     name: "Data & Api ",
@@ -56,14 +56,14 @@ const AppMenuConfig = [
       {
         path: "/Provider",
         name: "Provider",
-        loader: () => import("@/pages/Data/Provider")
+        loader: () => import("@/pages/Data/Provider"),
       },
       {
         path: "/Promise",
         name: "Promise",
-        loader: () => import("@/pages/Data/Promise")
-      }
-    ]
+        loader: () => import("@/pages/Data/Promise"),
+      },
+    ],
   },
   {
     name: "Data View",
@@ -72,29 +72,29 @@ const AppMenuConfig = [
       {
         path: "/NestedTable",
         name: "NestedTable",
-        loader: () => import("@/pages/Table/NestedTable")
+        loader: () => import("@/pages/Table/NestedTable"),
       },
       {
         path: "/Customer",
         name: "Customer",
-        loader: () => import("@/pages/Customer")
+        loader: () => import("@/pages/Customer"),
       },
       {
         path: "/JsonViewerSample",
         name: "JsonViewer",
-        element: <JsonViewerSample />
+        element: <JsonViewerSample />,
       },
       {
         path: "/ReactJson",
         name: "ReactJson",
-        element: <ReactJson />
+        element: <ReactJson />,
       },
       {
         path: "/StringifyJSon",
         name: "StringifyJSon",
-        element: <StringifyJson />
-      }
-    ]
+        element: <StringifyJson />,
+      },
+    ],
   },
 
   {
@@ -104,19 +104,19 @@ const AppMenuConfig = [
       {
         path: "/UrlPath",
         name: "UrlPath",
-        element: <UrlPath />
+        element: <UrlPath />,
       },
       {
         path: "/Facebook",
         name: "Facebook",
-        element: <Facebook />
+        element: <Facebook />,
       },
       {
         path: "/BackButton",
         name: "BackButton",
-        element: <BackButton />
-      }
-    ]
+        element: <BackButton />,
+      },
+    ],
   },
   {
     name: "Slider",
@@ -125,14 +125,14 @@ const AppMenuConfig = [
       {
         path: "/SliderAntd",
         name: "SliderAntd",
-        element: <SliderAntd />
+        element: <SliderAntd />,
       },
       {
         path: "/SlideShow",
         name: "SlideShow",
-        element: <SlideShow />
-      }
-    ]
+        element: <SlideShow />,
+      },
+    ],
   },
   {
     path: "/loading",
@@ -142,25 +142,25 @@ const AppMenuConfig = [
       {
         name: "Lazy",
         path: "/loading/lazy",
-        element: <LazyLoading />
+        element: <LazyLoading />,
       },
       {
         name: "Lazy V2",
         path: "/loading/lazyV2",
-        element: <LazyLoadingV2 />
+        element: <LazyLoadingV2 />,
       },
       {
         name: "loadable",
         path: "/loading/loadable",
-        element: <LoadableLoading />
-      }
-    ]
+        element: <LoadableLoading />,
+      },
+    ],
   },
   {
     path: "/error",
     name: "Error Boundary",
     icon: "WarningOutlined",
-    loader: () => import("@/pages/ErrorPage")
+    loader: () => import("@/pages/ErrorPage"),
   },
   {
     path: "/codes",
@@ -170,21 +170,15 @@ const AppMenuConfig = [
       {
         path: "/codes/HitSearch",
         name: "HitSearch",
-        loader: () => import("@/pages/Jobs/HitSearch")
+        loader: () => import("@/codes/HitSearch"),
       },
       {
-        path: "/codes/sonatus",
-        name: "sonatus",
-        loader: () => import("@/pages/Jobs/Sonatus")
+        path: "/codes/PlaceHolder",
+        name: "PlaceHolder",
+        loader: () => import("@/codes/PlaceHolder"),
       },
-      {
-        path: "/codes/illumio",
-        name: "Illumio",
-        loader: () => import("@/pages/Data/Illumio"),
-        icon: "HomeOutlined"
-      }
-    ]
-  }
+    ],
+  },
 ];
 
 export default AppMenuConfig;
